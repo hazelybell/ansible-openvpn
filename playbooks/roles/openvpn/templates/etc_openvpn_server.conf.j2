@@ -13,10 +13,6 @@ crl-verify {{ openvpn_crl }}
 {{ item }}
 {% endfor %}
 
-# Fix for the Windows 10 DNS leak described here:
-# https://community.openvpn.net/openvpn/ticket/605
-push block-outside-dns
-
 remote-cert-tls client
 keepalive 10 120
 tls-auth {{ openvpn_hmac_firewall }} 0
@@ -27,4 +23,4 @@ tls-version-min 1.2
 comp-lzo
 persist-key
 persist-tun
-verb 0
+verb 4
