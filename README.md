@@ -1,4 +1,11 @@
-# ansible-openvpn [![Build Status](https://travis-ci.org/BastiPaeltz/ansible-openvpn.svg?branch=master)](https://travis-ci.org/BastiPaeltz/ansible-openvpn)
+This is a fork of [ansible-vpn by BastiPaeltz](https://github.com/BastiPaeltz/ansible-openvpn)
+
+Changes:
+* Works on Debian Buster
+* Doesn't password-encrypt client private keys
+* Doesn't use OpenVPN upstream repository
+
+# Original README
 
 Ansible role and playbooks for installing openvpn and managing clients.
 
